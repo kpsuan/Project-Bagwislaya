@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    
+    background-image: url("paper.jpg");
+    background-position: center; 
+    background-repeat: repeat; 
+}
+.navi-bar{
+    background: #5A6D9C;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    transition: 0.3s ease;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto ;
+    padding: 0 50px;
+}
+
+#navlogo{
+    background-color: #ebece3;
+    background-size: 100%;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navigation-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+.items{
+    height: 60px;
+}
+
+.link{
+    color: #ebece3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+}
+
+.link:hover{
+    background:rgb(221, 63, 94);
+    padding: 25px;
+    color: #ebece3;
+    transition: 0.5s;
+}
+h1{
+    font-size:50px; 
+    font-weight:bold;
+    text-align:center;
+    margin-top: 60px;
+    margin-bottom: 11px;
+    color: #5A6D9C;
+    font-family: 'Gloria Hallelujah', cursive;
+    
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    min-height: 100vh;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    border-radius: 20px;
+}
+
