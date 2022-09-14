@@ -8,13 +8,13 @@ function checkName(){
     var fullname = document.getElementById('name').value;
 
     if(fullname.length == 0){
-        nameError.innerHTML='write full name please';
+        nameError.innerHTML='Write full name please';
     }
-    if(!fullname.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)){
-        nameError.innerHTML = 'write full name please';
+    if(!fullname.match(/^[a-zA-Z]+ [a-zA-Z]+$/)){
+        nameError.innerHTML = 'Write full name please';
         return false;
     }
-    nameError.innerHTML='';
+    nameError.innerHTML='  ';
     return true;
 }
 
@@ -37,24 +37,14 @@ function checkSubject(){
 
     if(subject == 0){
         subjectError.innerHTML='enter a subject please';
+        setTimeout(function(){nameError.style.display = 'none';}, 3000);
     }
     subjectError.innerHTML='';
     return true;
 }
 
-function checkMessage(){
-    var msg = document.getElementById('msg').value;
-    var required = 10;
-    var remaining = required - msg.length;
-    if(remaining > 0){
-        msgError.innerHTML= remaining + 'more char please';
-    }
-    msgError.innerHTML='OK';
-    return true;
-}
-
 function validateForm(){
-    if(!checkName()|| !checkEmail() || !checkSubject() || !checkMessage()){
+    if(!checkName()|| !checkEmail() || !checkSubject()){
         submitError.style.display = 'inline';
         submitError.innerHTML = 'Complete the form please';
         setTimeout(function(){submitError.style.display = 'none';}, 3000);

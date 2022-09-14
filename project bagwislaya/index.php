@@ -4,7 +4,6 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--Font-->
     
         <title>project bagwislaya</title>
         <link rel="icon" href="image/logo.png">
@@ -19,13 +18,13 @@
                     <span class = "bar"></span> <span class = "bar"></span>
                     <span class = "bar"></span>
                 </div>
-
+                <!--Contains all the different links for our website-->
                 <ul class="navigation-menu">
                     <li class = "items"><a href = "#" class="link">Home</a></li>
                     <li class = "items"><a href = "#about" class="link">About Us</a></li>
                     <li class = "items"><a href = "yearbook.html" class="link">Yearbook</a></li>
                     <li class = "items"><a href = "project.html" class="link">Projects</a></li>
-                    <li class = "items"><a href = "#contact-us" class="link">Contact Us</a></li>        
+                    <li class = "items"><a href = "login.php" class="link">Sign In</a></li>        
                 </ul>
             </div>
         </nav>
@@ -109,8 +108,7 @@
                     </div>
                     <div class="form-area">
                         <label for ="message">Write your message:</label>
-                        <textarea name = "message" cols="30" rows="10" id="msg" name ="message" onkeyup="checkMessage()"></textarea>
-                        <span id="msg-error"></span>
+                        <textarea name = "message" cols="30" rows="10" id="msg" name ="message"></textarea>
                     </div>
                 
                     <button type="submit" value="submit!" onclick="return validateForm()">submit</button>
